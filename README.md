@@ -21,4 +21,4 @@ The pipeline processes raw unstructured text across three decoupled layers:
 2. Initialize and activate your virtual environment:
    ```bash
    python -m venv .venv
-   source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
+   source .venv/bin/activate  # On Windows use: .venv\Scripts\activate"# entity-resolution-pipeline-V1" 
