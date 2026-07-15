@@ -1,18 +1,82 @@
+# ===========================
+# Python
+# ===========================
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
 
-# Environments
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ===========================
+# Virtual Environments
+# ===========================
 .venv/
 venv/
 ENV/
 env/
 
-# IDE / Editor configuration
+# ===========================
+# Model Weights & Checkpoints
+# ===========================
+# Large model files (260MB+ each) — don't commit to git
+models/ner_filter/checkpoint-*/optimizer.pt
+models/ner_filter/checkpoint-*/rng_state.pth
+models/ner_filter/checkpoint-*/scheduler.pt
+models/ner_filter/checkpoint-*/training_args.bin
+models/ner_filter/training_args.bin
+
+Safetensors model weights (uncomment to exclude from git)
+ models/ner_filter/checkpoint-*/model.safetensors
+ models/ner_filter/model.safetensors
+models/
+src/models/
+# ===========================
+# IDE / Editor Configuration
+# ===========================
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
-# Local OS files
+# ===========================
+# OS Generated Files
+# ===========================
 .DS_Store
 Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# ===========================
+# Jupyter Notebooks
+# ===========================
+.ipynb_checkpoints/
+*.ipynb
+
+# ===========================
+# Logs & Temp Files
+# ===========================
+*.log
+*.tmp
+*.bak
+
+# ===========================
+# HuggingFace Cache
+# ===========================
+.cache/
+huggingface/
+
+# ===========================
+# Testing
+# ===========================
+test_*.py
+.pytest_cache/
+htmlcov/
+.coverage
